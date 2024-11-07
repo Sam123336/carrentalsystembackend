@@ -9,7 +9,7 @@ app.use(cors());
 app.use(bodyParser.json());
 
 
-const port = process.env.PORT
+const port = process.env.PORT || 5000;
 // Set up Ethereal transporter
 const transporter = nodemailer.createTransport({
   host: 'smtp.ethereal.email',
